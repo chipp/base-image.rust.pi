@@ -1,4 +1,4 @@
-FROM rust:1.43-slim
+FROM rust:1.43.0-slim-stretch
 
 RUN rustup target add armv7-unknown-linux-gnueabihf && \
   echo "[build]\ntarget = \"armv7-unknown-linux-gnueabihf\"" > $CARGO_HOME/config
